@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="squiggle.png" type="image/png">
+    <link rel="stylesheet" href="stylesD3.css">
+    <title>Траєкторія руху</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <h2>Траєкторія руху матеріальної точки</h2>
+    <div id="chart">
+        <svg width="600px" height="400px"></svg>
+    </div>
+    <div class="input">
+        <label>x₀ (м): <input type="number" id="x0"></label>
+        <label>y₀ (м): <input type="number" id="y0"></label>
+        <label>Кут (градуси): <input type="number" id="angle"></label>
+        <label>Початкова швидкість (м/с): <input type="number" id="speed"></label>
+        <label>Прискорення (м/с²): <input type="number" id="acceleration"></label>
+        <label>Колір траєкторії<input type="color" id="color"></label>
+        <button onclick="drawGraph()">Побудувати графік</button>
+        <button onclick="clearChart()">Очистити</button></div>
+    <script src="scriptD3.js"></script>
+</body>
+</html>
