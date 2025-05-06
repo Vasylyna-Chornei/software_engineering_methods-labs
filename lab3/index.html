@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Задача про рюкзак</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="info">
+    <h2>Візуалізація задачі про рюкзак</h2>
+    <p><strong>Кількість предметів:</strong> 6<br>
+      <strong>Максимальна вага рюкзака:</strong> 18<br>
+      <strong>Ваги:</strong> [3, 10, 1, 4, 9, 7]<br>
+      <strong>Цінності:</strong> [7, 15, 15, 11, 12, 12]
+    </p>
+
+    <button onclick="fillTableStep()">Наступний крок</button>
+    <button onclick="fillTableAll()">Показати весь результат</button>
+    <button onclick="clearTable()">Скинути</button>
+  </div>
+
+
+  <table id="table"></table>
+  <div class="results">
+    <p id="maxValue"></p>
+    <p id="selectedItems"></p>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
